@@ -1,0 +1,12 @@
+# mkmdindex
+
+Make Markdown file index.
+
+# Usage
+
+	> mkmdindex
+	file1.htm
+	[file1.htm](file1.htm)  # There're  2 space characters in the end of line.
+	file2.htm
+	[file2.htm](file2.htm)  
+
