@@ -4,11 +4,19 @@ import(
 	"fmt"
 	"bufio"
 	"os"
+	"strings"
 )
 
 var(
 	delim = '\n'
 )
+
+func
+ppShowPath(s string) string {
+	s = strings.ReplaceAll(s, "_", "\\_")	
+	s = strings.ReplaceAll(s, "*", "\\*")	
+	return s
+}
 
 func
 main() {
@@ -19,7 +27,7 @@ main() {
 			break
 		}
 		p = p[:len(p)-1]
-		fmt.Printf("[%s](%s)  \n", p, p)
+		fmt.Printf("[%s](%s)  \n", ppShowPath(p), p)
 	}
 }
 
